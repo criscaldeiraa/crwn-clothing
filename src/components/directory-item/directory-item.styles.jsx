@@ -1,4 +1,6 @@
-.category-container {
+import styled from "styled-components";
+
+export const DirectoryItemContainer = styled.div`
     min-width: 30%;
     height: 240px;
     flex: 1 1 auto;
@@ -17,7 +19,7 @@
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       }
   
-      & .category-body-container {
+      & .directory-item-body {
         opacity: 0.9;
       }
     }
@@ -33,15 +35,16 @@
     &:last-child {
       margin-left: 7.5px;
     }
+`
+
+export const BackgroundImage = styled.div`
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+`
   
-    .background-image {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .category-body-container {
+export const DirectoryItemBody = styled.div`
       height: 90px;
       padding: 0 25px;
       display: flex;
@@ -52,17 +55,16 @@
       background-color: white;
       opacity: 0.7;
       position: absolute;
-  
-      h2 {
+`
+
+export const Titleh2 = styled.h2`
         font-weight: bold;
         margin: 0 6px 0;
         font-size: 22px;
         color: #4a4a4a;
-      }
+`
   
-      p {
+export const Text = styled.p`
         font-weight: lighter;
         font-size: 16px;
-      }
-    }
-  }
+`
