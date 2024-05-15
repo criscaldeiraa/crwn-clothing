@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { selectCartTotal } from '../../store/cart/cart.selector';
 import { selectCurrentUser } from '../../store/user/user.selector';
 
-import Button, {BUTTON_TYPE_CLASSES} from '../button/button.component';
+import {BUTTON_TYPE_CLASSES} from '../button/button.component';
 
 import { PaymentFormContainer, FormContainer, PaymentButton } from './payment-form.styles';
 
@@ -72,7 +72,6 @@ const PaymentForm = () => {
             </FormContainer>
         </PaymentFormContainer>
     )
-
 }
 
 export default PaymentForm;
